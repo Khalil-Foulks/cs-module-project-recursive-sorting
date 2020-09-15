@@ -19,11 +19,11 @@ def binary_search(arr, target, start, end):
             # if true right is updated to whatever was to the left of midpoint
             # rerun function
             return binary_search(arr, target, start, midpoint -1)
-            
+
         # check if midpoint value < target
         else:
         # recursive case
-            # if true left is updated to whatever was to the right of midpoint
+            # otherwise left is updated to whatever was to the right of midpoint
             # rerun function
             return binary_search(arr, target, midpoint + 1, end)
     # stop if end < start
